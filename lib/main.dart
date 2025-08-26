@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:recycle_app/pages/features.dart';
+import 'package:recycle_app/pages/home.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,6 +10,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
       
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: Features()
+      home: Home()
     );
   }
 }
