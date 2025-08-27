@@ -15,9 +15,9 @@ class _HomeState extends State<Home> {
       backgroundColor: Colors.white,
       body: SingleChildScrollView(
         child: Container(
-          margin: EdgeInsets.only(top: 40.0, ),
+          margin: EdgeInsets.only(top: 40.0 ),
           child: Column( 
-            crossAxisAlignment: CrossAxisAlignment.start ,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
           Row(
             children: [
