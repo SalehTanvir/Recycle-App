@@ -12,7 +12,12 @@
           "package_name": "com.example.recycle_app"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "141718597287-i23kofcvbcmd074qctovj9l5219tr9kp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyBIhW-2Kp7z-2GIKV3rZbELA3P-nRz2LJg"
@@ -20,7 +25,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "141718597287-i23kofcvbcmd074qctovj9l5219tr9kp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }
