@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:recycle_app/services/widget_support.dart';
 
 class UploadItem extends StatefulWidget {
-  const UploadItem({super.key});
+  String category, id;
+  UploadItem({required this.category, required this.id});
 
   @override
   State<UploadItem> createState() => _UploadItemState();

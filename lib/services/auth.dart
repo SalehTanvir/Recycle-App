@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:recycle_app/pages/home.dart';
 import 'package:recycle_app/services/database.dart';
+import 'package:recycle_app/services/shared_pref.dart';
 
 class AuthMethods{
 
@@ -21,16 +22,20 @@ class AuthMethods{
 
     UserCredential result = await firebaseAuth.signInWithCredential(credential);
     User? userDetails =result.user;
-    Map<String,dynamic> userInfoMap={
-      "email":userDetails!.email,
-      "name":userDetails.displayName,
-      "image": userDetails.photoURL,
-      "Id": userDetails.uid,
+    await SharedpreferenceHelper().saveUserEmail(userDetails!.email!);
+    await SharedpreferenceHelper().saveUserId(userDetails.uid);
+    await SharedpreferenceHelper().saveUserImage(userDetails.photoURL!);
+    await SharedpreferenceHelper().saveUserName(userDetails.displayName!);
+  Map<String,dynamic> userInfoMap= {
+    "email":userDetails.email,
+    "name":userDetails.displayName,
+    "image": userDetails.photoURL,
+    "Id": userDetails.uid,
 
 
-    };
+  };
 
-    await DatabaseMethods().addUserInfo(userInfoMap, userDetails.uid);
-    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>Home()));
+  await DatabaseMethods().addUserInfo(userInfoMap, userDetails.uid);
+  Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>Home()));
     }
-}
+} 

@@ -1,4 +1,6 @@
   import 'package:flutter/material.dart';
+import 'package:recycle_app/pages/upload_item.dart';
+import 'package:recycle_app/services/shared_pref.dart';
 import 'package:recycle_app/services/widget_support.dart';
 
 class Home extends StatefulWidget {
@@ -9,6 +11,25 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+  String? id;
+  getthesharedpref()async{
+    id = await SharedpreferenceHelper().getUserId();
+    setState(() {
+      
+    });
+  }
+  ontheload()async{
+    await getthesharedpref();
+    setState(() {
+      
+    });
+  }
+
+  @override
+  void initState() {
+    ontheload();
+    super.initState();
+  }
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
@@ -53,18 +74,24 @@ class _HomeState extends State<Home> {
             child: ListView(
               scrollDirection: Axis.horizontal,
               children: [
-                Column(
-                  children: [
-                    Container(
-                      padding: EdgeInsets.all(8),
-                      decoration: BoxDecoration(
-                        color: Color.fromARGB(255, 255, 255, 255), borderRadius: BorderRadius.circular(20.0), 
-                      ),
-                      child: Image.asset("images/glass.png", height: 80, width: 80, fit: BoxFit.cover,)),
-                      SizedBox(height: 5.0,),
-                      Text("Glass", style: AppWidget.normaltextstyle(20.0),)
-                  ],
-            
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=> UploadItem(category: "Glass", id: id!)));
+                  },
+
+                  child: Column(
+                    children: [
+                      Container(
+                        padding: EdgeInsets.all(8),
+                        decoration: BoxDecoration(
+                          color: Color.fromARGB(255, 255, 255, 255), borderRadius: BorderRadius.circular(20.0), 
+                        ),
+                        child: Image.asset("images/glass.png", height: 80, width: 80, fit: BoxFit.cover,)),
+                        SizedBox(height: 5.0,),
+                        Text("Glass", style: AppWidget.normaltextstyle(20.0),)
+                    ],
+                              
+                  ),
                 ),
                 SizedBox(width: 20.0,),
                  Column(
