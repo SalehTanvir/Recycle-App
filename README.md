@@ -1,6 +1,10 @@
 # recycle_app
 
-A new Flutter project.
+ Developed a mobile application that promotes eco-friendly behavior by allowing 
+users to dispose of various types of waste such as glass, plastic, paper, and 
+batteries and earn virtual coins as rewards which can be redeemed for goods 
+within the app. 
+
 
 ## Getting Started
 
