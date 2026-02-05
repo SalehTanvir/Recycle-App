@@ -7,18 +7,13 @@ within the app.
 
 
 ## Featured Page
-  ![Screenshot_2026-02-05-11-12-03-60](https://github.com/user-attachments/assets/dcfe5cf6-19ec-40d6-b7df-7e33f26fdd5b)
-
+<img src="https://github.com/user-attachments/assets/dcfe5cf6-19ec-40d6-b7df-7e33f26fdd5b" alt="Featured Page" width="250" height="500" />
 
 ## Login Page
-
-![Screenshot_2026-02-05-11-06-34-81](https://github.com/user-attachments/assets/2b91e052-05cd-4094-99be-3b34eaa11bbc)
-
+<img src="https://github.com/user-attachments/assets/2b91e052-05cd-4094-99be-3b34eaa11bbc" alt="Login Page" width="250" height="500" />
 
 ## Home Page
-![Screenshot_2026-02-05-11-04-31-21](https://github.com/user-attachments/assets/a9f4f3dc-6c0e-473f-a014-6ef152fb6889)
-
+<img src="https://github.com/user-attachments/assets/a9f4f3dc-6c0e-473f-a014-6ef152fb6889" alt="Home Page" width="250" height="500" />
 
 ## Upload Items Page
-
-![Screenshot_2026-02-05-11-08-45-63](https://github.com/user-attachments/assets/ad2eeeaf-b6db-4b64-b734-730c610a759d)
+<img src="https://github.com/user-attachments/assets/ad2eeeaf-b6db-4b64-b734-730c610a759d" alt="Upload Items Page" width="250" height="500" />
