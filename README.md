@@ -7,7 +7,8 @@ within the app.
 
 
 ## Featured Page
-  <img src="![Screenshot_2026-02-05-11-12-03-60](https://github.com/user-attachments/assets/fbadf950-d845-4653-adf1-9d39996543c9)" width="400" height="400">
+  <img src="![Screenshot_2026-02-05-11-12-03-60](https://github.com/user-attachments/assets/dcfe5cf6-19ec-40d6-b7df-7e33f26fdd5b)
+" width="50%" height="400">
 
 
 
