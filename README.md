@@ -7,9 +7,7 @@ within the app.
 
 
 ## Featured Page
-<p align="center">
   <img src="![Screenshot_2026-02-05-11-12-03-60](https://github.com/user-attachments/assets/fbadf950-d845-4653-adf1-9d39996543c9)" width="400" height="400">
-</p>
 
 
 
